@@ -1,0 +1,103 @@
+@import url('https://fonts.cdnfonts.com/css/norse');
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template: 100vh / 33.33vw 66.67vw;
+    background-color: lightgray;
+}
+
+.image{
+    background-image: url("images/img.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.form-container{
+    background-color: lightgrey;
+    height: 100%;
+}
+
+.logo-container{
+    background-color: black;
+    background:rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-family: 'Norse', sans-serif;
+    color: whitesmoke;
+    font-size: 70px;
+}
+
+.description{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;  
+    font-size: larger;
+    font-weight: bold;
+}
+
+.description a{
+    padding-left: 30px;
+    padding-bottom: 40px;
+    padding-right: 200px;
+}
+
+.form{
+    background-color: white;
+}
+
+form{
+    padding: 15px;
+    padding-left: 30px;
+}
+
+.bottom-container{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+button{
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-width: 0;
+    background-color: rgb(139, 69, 47);
+    font-weight: bold;
+    color: white;
+}
+
+input {
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+input:focus {
+    border: 3px solid #1430e8;
+}
+
+.error-modal {
+    --color-error-text: red;
+    --modal-border: 1px solid black;
+    --modal-font-size: calc(2rem + 5vw);
+
+    color: var(--color-error-text);
+    border: var(--modal-border);
+    font-size: var(--modal-font-size);
+}
